@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to EduPortal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Left Side Image -->
+
+        <div class="image-section">
+            <img src="images/register-illustration.jpeg"
+                 alt="Registration Illustration">
+        </div>
+
+        <!-- Right Side Form -->
+
+        <div class="form-section">
+
+            <h1>Welcome to EduPortal</h1>
+
+            <p class="subtitle">
+              Create your account and start learning today
+            </p>
+
+            <form id="registerForm">
+
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name">
+                    <small id="nameError"></small>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email address">
+                    <small id="emailError"></small>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create a password">
+                    <small id="passwordError"></small>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm your password">
+                    <small id="confirmPasswordError"></small>
+                </div>
+
+                <button type="submit">
+                    Register
+                </button>
+
+                <div id="successMessage"></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
